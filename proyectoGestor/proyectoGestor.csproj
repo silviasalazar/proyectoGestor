@@ -95,6 +95,24 @@
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
+    <Compile Include="frmBorrarTabla.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmBorrarTabla.Designer.cs">
+      <DependentUpon>frmBorrarTabla.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmCrearTabla.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmCrearTabla.Designer.cs">
+      <DependentUpon>frmCrearTabla.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmInsertaRegistro.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmInsertaRegistro.Designer.cs">
+      <DependentUpon>frmInsertaRegistro.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmModificar.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -111,6 +129,15 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmBorrarTabla.resx">
+      <DependentUpon>frmBorrarTabla.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmCrearTabla.resx">
+      <DependentUpon>frmCrearTabla.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmInsertaRegistro.resx">
+      <DependentUpon>frmInsertaRegistro.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmModificar.resx">
       <DependentUpon>frmModificar.cs</DependentUpon>
