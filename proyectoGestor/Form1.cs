@@ -235,11 +235,15 @@ namespace proyectoGestor
                 //string ruta = Application.StartupPath + @"\BasesDeDatos\" + Usando + @"\";
                 // this.Visible = false;
                 //MySqlConnection connection = new MySqlConnection("Server=localhost;UserId=root;PWD=Unicornio123; database="+ Usando + ";");
-                frmModificar modificar = new frmModificar();
+                frmModificar modificar = new frmModificar(this,Usando);
                 //modificar.Usando = this;
                 modificar.Show();
-               
+
                 
+
+
+
+
                 //modificar.Visible = true;
                 //modificar.Focus();
             }

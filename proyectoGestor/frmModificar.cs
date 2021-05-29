@@ -13,12 +13,20 @@ namespace proyectoGestor
 {
     public partial class frmModificar : Form
     {
-       // string usando = null;
-        MySqlConnection connection = new MySqlConnection("Server=localhost;Database=alumnos;UserId=root;PWD=Unicornio123;"); // conectar BD
-        public frmModificar()
+        Form1 principal;
+        string bd;
+        // string usando = null;
+        MySqlConnection connection;// = new MySqlConnection("Server=localhost;Database=alumnos;UserId=root;PWD=Unicornio123;"); // conectar BD
+        public frmModificar(Form1 inicio, string bd)
         {
             InitializeComponent();
             //connection.Open();
+            principal = inicio;
+            this.bd = bd;
+            connection= new MySqlConnection("Server=localhost;Database="+bd+";UserId=root;PWD=Unicornio123;");
+
+
+
         }
 
         private void frmModificar_Load(object sender, EventArgs e)
@@ -45,6 +53,10 @@ namespace proyectoGestor
                     MessageBox.Show(this, "Tabla creada exitosamente");
 
                 }
+                else if (crearTabla.ShowDialog() == DialogResult.Cancel)
+                {
+                    crearTabla.Close();
+                }
 
             }
             catch (Exception ex)
@@ -57,7 +69,7 @@ namespace proyectoGestor
 
         private void btnBorrarTabla_Click(object sender, EventArgs e)
         {
-            frmBorrarTabla borrarTabla = new frmBorrarTabla();
+            frmBorrarTabla borrarTabla = new frmBorrarTabla(bd);
             //borrarTabla.Show();
 
             try
@@ -74,6 +86,10 @@ namespace proyectoGestor
                     MessageBox.Show(this, "Tabla borrada exitosamente");
                    // connection.Close();
 
+                }
+                else if (borrarTabla.ShowDialog() == DialogResult.Cancel)
+                {
+                    borrarTabla.Close();
                 }
 
             }
