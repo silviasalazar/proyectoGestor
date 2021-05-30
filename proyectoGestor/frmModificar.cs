@@ -15,6 +15,7 @@ namespace proyectoGestor
     {
         Form1 principal;
         string bd;
+        //frmAgregarCampos agregarCampos = new frmAgregarCampos();
         // string usando = null;
         MySqlConnection connection;// = new MySqlConnection("Server=localhost;Database=alumnos;UserId=root;PWD=Unicornio123;"); // conectar BD
         public frmModificar(Form1 inicio, string bd)
@@ -36,18 +37,21 @@ namespace proyectoGestor
 
         private void btnCrearTabla_Click(object sender, EventArgs e)
         {
-            frmCrearTabla crearTabla = new frmCrearTabla();
-            //crearTabla.Show();
+            
+            frmCrearTabla crearTabla = new frmCrearTabla(bd);
+            crearTabla.Show();
 
-            try
+           /* try
             {
 
                 if (crearTabla.ShowDialog() == DialogResult.OK)
                 {
                     string nombre = crearTabla.txtNombre.Text;
+                    string tipoDato = agregarCampos.comboBox1.Text;
+                    
 
                     connection.Open();
-                    MySqlCommand command = new MySqlCommand("create table " + nombre + " ( id int primary key);", connection);
+                    MySqlCommand command = new MySqlCommand("create table " + nombre + " ( "+ + " "+ tipoDato + " " + colTamaño +");", connection);
                     command.ExecuteNonQuery();
                     connection.Close();
                     MessageBox.Show(this, "Tabla creada exitosamente");
@@ -62,7 +66,7 @@ namespace proyectoGestor
             catch (Exception ex)
             {
                 MessageBox.Show("No se pudo crear la tabla");
-            }
+            }*/
 
 
         }

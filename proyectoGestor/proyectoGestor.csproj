@@ -95,6 +95,12 @@
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
+    <Compile Include="frmAgregarCampos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmAgregarCampos.Designer.cs">
+      <DependentUpon>frmAgregarCampos.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmBorrarTabla.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -129,6 +135,9 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmAgregarCampos.resx">
+      <DependentUpon>frmAgregarCampos.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmBorrarTabla.resx">
       <DependentUpon>frmBorrarTabla.cs</DependentUpon>
