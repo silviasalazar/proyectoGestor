@@ -125,6 +125,7 @@ namespace proyectoGestor
             this.txtNombreCampo.Name = "txtNombreCampo";
             this.txtNombreCampo.Size = new System.Drawing.Size(277, 22);
             this.txtNombreCampo.TabIndex = 9;
+            this.txtNombreCampo.TextChanged += new System.EventHandler(this.txtNombreCampo_TextChanged);
             // 
             // comboBox1
             // 

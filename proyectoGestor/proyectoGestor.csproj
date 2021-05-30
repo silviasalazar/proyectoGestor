@@ -113,6 +113,18 @@
     <Compile Include="frmCrearTabla.Designer.cs">
       <DependentUpon>frmCrearTabla.cs</DependentUpon>
     </Compile>
+    <Compile Include="frmEliminarColumna.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmEliminarColumna.Designer.cs">
+      <DependentUpon>frmEliminarColumna.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmInsertarColumna.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmInsertarColumna.Designer.cs">
+      <DependentUpon>frmInsertarColumna.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmInsertaRegistro.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -125,11 +137,23 @@
     <Compile Include="frmModificar.Designer.cs">
       <DependentUpon>frmModificar.cs</DependentUpon>
     </Compile>
+    <Compile Include="frmModificarTabla.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmModificarTabla.Designer.cs">
+      <DependentUpon>frmModificarTabla.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmNueva.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="frmNueva.Designer.cs">
       <DependentUpon>frmNueva.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmRenombrar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmRenombrar.Designer.cs">
+      <DependentUpon>frmRenombrar.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -145,14 +169,26 @@
     <EmbeddedResource Include="frmCrearTabla.resx">
       <DependentUpon>frmCrearTabla.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="frmEliminarColumna.resx">
+      <DependentUpon>frmEliminarColumna.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmInsertarColumna.resx">
+      <DependentUpon>frmInsertarColumna.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frmInsertaRegistro.resx">
       <DependentUpon>frmInsertaRegistro.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmModificar.resx">
       <DependentUpon>frmModificar.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="frmModificarTabla.resx">
+      <DependentUpon>frmModificarTabla.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frmNueva.resx">
       <DependentUpon>frmNueva.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmRenombrar.resx">
+      <DependentUpon>frmRenombrar.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

@@ -88,7 +88,7 @@ namespace proyectoGestor
                             MessageBox.Show(this, "Tabla creada exitosamente");
 
                         }
-                        else if (tipoDato == "INT" | tipoDato == "TINYINT" | tipoDato == "SMALLINT")
+                        else if (tipoDato == "INT" | tipoDato == "TINYINT" | tipoDato == "SMALLINT" | tipoDato == "DATE")
                         {
 
                             connection.Open();
@@ -147,7 +147,7 @@ namespace proyectoGestor
                     MessageBox.Show(this, "campo agregado exitosamente");
 
                 }
-                else if (tipoDato == "INT" | tipoDato == "TINYINT" | tipoDato == "SMALLINT")
+                else if (tipoDato == "INT" | tipoDato == "TINYINT" | tipoDato == "SMALLINT" | tipoDato == "DATE")
                 {
 
                     connection.Open();
@@ -171,6 +171,11 @@ namespace proyectoGestor
         private void btnCancelar_Click(object sender, EventArgs e)
         {
             this.Close();
+        }
+
+        private void txtNombreCampo_TextChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }

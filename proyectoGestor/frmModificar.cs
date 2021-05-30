@@ -117,6 +117,8 @@ namespace proyectoGestor
 
         private void btnModificarTabla_Click(object sender, EventArgs e)
         {
+            frmModificarTabla modificarTabla = new frmModificarTabla(bd);
+            modificarTabla.Show();
 
         }
     }
