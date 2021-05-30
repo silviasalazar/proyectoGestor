@@ -13,8 +13,8 @@ namespace proyectoGestor
 {
     public partial class frmModificarTabla : Form
     {
-        string seleccionada = null;
-        string bd;
+        string seleccionada = null;//Tabla seleccionada
+        string bd; //BD seleccionada
         MySqlConnection connection;
         public frmModificarTabla(string bd)
         {
@@ -160,7 +160,88 @@ namespace proyectoGestor
                 MessageBox.Show("Error!!!");
             }
         }
+
+        private void btnInsertarRegistro_Click(object sender, EventArgs e)
+        {
+            frmInsertarRegistro insertaRegistro = new frmInsertarRegistro(bd,seleccionada);
+            try
+            {
+
+                if (insertaRegistro.ShowDialog() == DialogResult.OK)
+                {
+                    connection.Open();
+                    for (int i=0; i<(insertaRegistro.dgvRegistros.Rows.Count)-1;i++)
+                    {
+                        for (int j = 0; j < (insertaRegistro.dgvRegistros.Columns.Count)-1; j++)
+                        {
+                            MySqlCommand command = new MySqlCommand("insert into " + seleccionada + " values (" + insertaRegistro.dgvRegistros.Rows[i].Cells[j].Value + "); ", connection);
+                            command.ExecuteNonQuery();
+
+                        }
+                           
+                    }
+                    
+                    
+
+                    connection.Close();
+                    MessageBox.Show(this, "Registro insertado");
+
+
+                }
+                else if (insertaRegistro.ShowDialog() == DialogResult.Cancel)
+                {
+                    insertaRegistro.Close();
+
+                }
+
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Error!!!");
+            }
+
+        }
+
+        private void btnEliminarRegistro_Click(object sender, EventArgs e)
+        {
+            frmEliminarRegistro eliminarRegistro = new frmEliminarRegistro(bd,seleccionada);
+
+            try
+            {
+                string nombreColumna = eliminarRegistro.txtNombreColumna.Text;
+                string identificador = eliminarRegistro.txtIdentificador.Text;
+
+                if (eliminarRegistro.ShowDialog() == DialogResult.OK)
+                {
+
+
+                    connection.Open();
+                    MySqlCommand command = new MySqlCommand("delete from " + seleccionada + " where "+nombreColumna+"="+identificador+ "; ", connection);
+                             command.ExecuteNonQuery();
+                    connection.Close();
+
+             
+                  
+
+
+                            MessageBox.Show("Eliminado");
+
+                }
+                else if (eliminarRegistro.ShowDialog() == DialogResult.Cancel)
+                {
+                    eliminarRegistro.Close();
+
+                }
+
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Error!!!");
+            }
+
+        }
     }
+    
     
 }
 

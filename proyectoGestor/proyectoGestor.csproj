@@ -119,6 +119,12 @@
     <Compile Include="frmEliminarColumna.Designer.cs">
       <DependentUpon>frmEliminarColumna.cs</DependentUpon>
     </Compile>
+    <Compile Include="frmEliminarRegistro.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmEliminarRegistro.Designer.cs">
+      <DependentUpon>frmEliminarRegistro.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmInsertarColumna.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -130,6 +136,12 @@
     </Compile>
     <Compile Include="frmInsertaRegistro.Designer.cs">
       <DependentUpon>frmInsertaRegistro.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmInsertarRegistro.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmInsertarRegistro.Designer.cs">
+      <DependentUpon>frmInsertarRegistro.cs</DependentUpon>
     </Compile>
     <Compile Include="frmModificar.cs">
       <SubType>Form</SubType>
@@ -172,11 +184,17 @@
     <EmbeddedResource Include="frmEliminarColumna.resx">
       <DependentUpon>frmEliminarColumna.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="frmEliminarRegistro.resx">
+      <DependentUpon>frmEliminarRegistro.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frmInsertarColumna.resx">
       <DependentUpon>frmInsertarColumna.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmInsertaRegistro.resx">
       <DependentUpon>frmInsertaRegistro.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmInsertarRegistro.resx">
+      <DependentUpon>frmInsertarRegistro.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmModificar.resx">
       <DependentUpon>frmModificar.cs</DependentUpon>
