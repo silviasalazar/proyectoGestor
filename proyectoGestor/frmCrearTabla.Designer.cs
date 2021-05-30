@@ -39,8 +39,8 @@ namespace proyectoGestor
             this.label4 = new System.Windows.Forms.Label();
             this.txtNombreCampo = new System.Windows.Forms.TextBox();
             this.comboBox1 = new System.Windows.Forms.ComboBox();
-            this.txtLongitud = new System.Windows.Forms.TextBox();
             this.cbLongitud = new System.Windows.Forms.ComboBox();
+            this.btnGuardarNuevoCampo = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // label1
@@ -67,23 +67,24 @@ namespace proyectoGestor
             this.btnAceptar.Name = "btnAceptar";
             this.btnAceptar.Size = new System.Drawing.Size(163, 49);
             this.btnAceptar.TabIndex = 2;
-            this.btnAceptar.Text = "Aceptar";
+            this.btnAceptar.Text = "Crear";
             this.btnAceptar.UseVisualStyleBackColor = true;
             this.btnAceptar.Click += new System.EventHandler(this.btnAceptar_Click);
             // 
             // btnCancelar
             // 
             this.btnCancelar.DialogResult = System.Windows.Forms.DialogResult.Cancel;
-            this.btnCancelar.Location = new System.Drawing.Point(445, 232);
+            this.btnCancelar.Location = new System.Drawing.Point(448, 190);
             this.btnCancelar.Name = "btnCancelar";
-            this.btnCancelar.Size = new System.Drawing.Size(163, 49);
+            this.btnCancelar.Size = new System.Drawing.Size(163, 45);
             this.btnCancelar.TabIndex = 3;
-            this.btnCancelar.Text = "cancelar";
+            this.btnCancelar.Text = "Salir";
             this.btnCancelar.UseVisualStyleBackColor = true;
+            this.btnCancelar.Click += new System.EventHandler(this.btnCancelar_Click);
             // 
             // btnAgregarCampos
             // 
-            this.btnAgregarCampos.Location = new System.Drawing.Point(446, 104);
+            this.btnAgregarCampos.Location = new System.Drawing.Point(447, 75);
             this.btnAgregarCampos.Name = "btnAgregarCampos";
             this.btnAgregarCampos.Size = new System.Drawing.Size(162, 52);
             this.btnAgregarCampos.TabIndex = 5;
@@ -133,30 +134,34 @@ namespace proyectoGestor
             this.comboBox1.Size = new System.Drawing.Size(277, 24);
             this.comboBox1.TabIndex = 10;
             this.comboBox1.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
-            // 
-            // txtLongitud
-            // 
-            this.txtLongitud.Location = new System.Drawing.Point(152, 160);
-            this.txtLongitud.Name = "txtLongitud";
-            this.txtLongitud.Size = new System.Drawing.Size(100, 22);
-            this.txtLongitud.TabIndex = 11;
+            this.comboBox1.Click += new System.EventHandler(this.comboBox1_Click);
             // 
             // cbLongitud
             // 
             this.cbLongitud.FormattingEnabled = true;
-            this.cbLongitud.Location = new System.Drawing.Point(152, 189);
+            this.cbLongitud.Location = new System.Drawing.Point(152, 160);
             this.cbLongitud.Name = "cbLongitud";
             this.cbLongitud.Size = new System.Drawing.Size(121, 24);
             this.cbLongitud.TabIndex = 12;
             this.cbLongitud.SelectedIndexChanged += new System.EventHandler(this.cbLongitud_SelectedIndexChanged);
             // 
+            // btnGuardarNuevoCampo
+            // 
+            this.btnGuardarNuevoCampo.Location = new System.Drawing.Point(448, 133);
+            this.btnGuardarNuevoCampo.Name = "btnGuardarNuevoCampo";
+            this.btnGuardarNuevoCampo.Size = new System.Drawing.Size(162, 51);
+            this.btnGuardarNuevoCampo.TabIndex = 13;
+            this.btnGuardarNuevoCampo.Text = "Guardar nuevo campo";
+            this.btnGuardarNuevoCampo.UseVisualStyleBackColor = true;
+            this.btnGuardarNuevoCampo.Click += new System.EventHandler(this.btnGuardarNuevoCampo_Click);
+            // 
             // frmCrearTabla
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(619, 406);
+            this.ClientSize = new System.Drawing.Size(619, 292);
+            this.Controls.Add(this.btnGuardarNuevoCampo);
             this.Controls.Add(this.cbLongitud);
-            this.Controls.Add(this.txtLongitud);
             this.Controls.Add(this.comboBox1);
             this.Controls.Add(this.txtNombreCampo);
             this.Controls.Add(this.label4);
@@ -186,7 +191,7 @@ namespace proyectoGestor
         private System.Windows.Forms.Label label4;
         public System.Windows.Forms.TextBox txtNombreCampo;
         private System.Windows.Forms.ComboBox comboBox1;
-        private System.Windows.Forms.TextBox txtLongitud;
         public System.Windows.Forms.ComboBox cbLongitud;
+        public System.Windows.Forms.Button btnGuardarNuevoCampo;
     }
 }

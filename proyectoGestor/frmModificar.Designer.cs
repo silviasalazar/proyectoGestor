@@ -34,6 +34,7 @@ namespace proyectoGestor
             this.btnModificarTabla = new System.Windows.Forms.Button();
             this.btnInsertarRegistros = new System.Windows.Forms.Button();
             this.btnBorrarRegistros = new System.Windows.Forms.Button();
+            this.btnRegresarMenu = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // btnCrearTabla
@@ -64,6 +65,7 @@ namespace proyectoGestor
             this.btnModificarTabla.TabIndex = 2;
             this.btnModificarTabla.Text = "Modificar tabla";
             this.btnModificarTabla.UseVisualStyleBackColor = true;
+            this.btnModificarTabla.Click += new System.EventHandler(this.btnModificarTabla_Click);
             // 
             // btnInsertarRegistros
             // 
@@ -84,11 +86,22 @@ namespace proyectoGestor
             this.btnBorrarRegistros.Text = "Borrar registros";
             this.btnBorrarRegistros.UseVisualStyleBackColor = true;
             // 
+            // btnRegresarMenu
+            // 
+            this.btnRegresarMenu.Location = new System.Drawing.Point(37, 384);
+            this.btnRegresarMenu.Name = "btnRegresarMenu";
+            this.btnRegresarMenu.Size = new System.Drawing.Size(177, 54);
+            this.btnRegresarMenu.TabIndex = 5;
+            this.btnRegresarMenu.Text = "Regresar";
+            this.btnRegresarMenu.UseVisualStyleBackColor = true;
+            this.btnRegresarMenu.Click += new System.EventHandler(this.btnRegresarMenu_Click);
+            // 
             // frmModificar
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.btnRegresarMenu);
             this.Controls.Add(this.btnBorrarRegistros);
             this.Controls.Add(this.btnInsertarRegistros);
             this.Controls.Add(this.btnModificarTabla);
@@ -103,10 +116,11 @@ namespace proyectoGestor
 
         #endregion
 
-        private System.Windows.Forms.Button btnCrearTabla;
-        private System.Windows.Forms.Button btnBorrarTabla;
-        private System.Windows.Forms.Button btnModificarTabla;
-        private System.Windows.Forms.Button btnInsertarRegistros;
-        private System.Windows.Forms.Button btnBorrarRegistros;
+        public System.Windows.Forms.Button btnRegresarMenu;
+        public System.Windows.Forms.Button btnCrearTabla;
+        public System.Windows.Forms.Button btnBorrarTabla;
+        public System.Windows.Forms.Button btnModificarTabla;
+        public System.Windows.Forms.Button btnInsertarRegistros;
+        public System.Windows.Forms.Button btnBorrarRegistros;
     }
 }

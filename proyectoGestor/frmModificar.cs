@@ -109,5 +109,15 @@ namespace proyectoGestor
             frmInsertaRegistro insertar = new frmInsertaRegistro();
             insertar.Show();
         }
+
+        private void btnRegresarMenu_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+
+        private void btnModificarTabla_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
