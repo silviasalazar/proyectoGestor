@@ -32,11 +32,10 @@ namespace proyectoGestor
             this.btnCrear = new System.Windows.Forms.Button();
             this.btnUsar = new System.Windows.Forms.Button();
             this.btnBorrar = new System.Windows.Forms.Button();
-            this.dgDB = new System.Windows.Forms.DataGridView();
             this.cbDB = new System.Windows.Forms.ComboBox();
             this.btnDejar = new System.Windows.Forms.Button();
             this.btnModificar = new System.Windows.Forms.Button();
-            ((System.ComponentModel.ISupportInitialize)(this.dgDB)).BeginInit();
+            this.label1 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // btnCrear
@@ -69,21 +68,10 @@ namespace proyectoGestor
             this.btnBorrar.UseVisualStyleBackColor = true;
             this.btnBorrar.Click += new System.EventHandler(this.btnBorrar_Click);
             // 
-            // dgDB
-            // 
-            this.dgDB.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgDB.Location = new System.Drawing.Point(398, 29);
-            this.dgDB.Name = "dgDB";
-            this.dgDB.RowHeadersWidth = 51;
-            this.dgDB.RowTemplate.Height = 24;
-            this.dgDB.Size = new System.Drawing.Size(240, 150);
-            this.dgDB.TabIndex = 3;
-            this.dgDB.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgDB_CellContentClick);
-            // 
             // cbDB
             // 
             this.cbDB.FormattingEnabled = true;
-            this.cbDB.Location = new System.Drawing.Point(398, 224);
+            this.cbDB.Location = new System.Drawing.Point(364, 60);
             this.cbDB.Name = "cbDB";
             this.cbDB.Size = new System.Drawing.Size(240, 24);
             this.cbDB.TabIndex = 4;
@@ -109,22 +97,31 @@ namespace proyectoGestor
             this.btnModificar.UseVisualStyleBackColor = true;
             this.btnModificar.Click += new System.EventHandler(this.btnModificar_Click);
             // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(361, 29);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(203, 17);
+            this.label1.TabIndex = 7;
+            this.label1.Text = "Seleccione una base de datos:";
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.label1);
             this.Controls.Add(this.btnModificar);
             this.Controls.Add(this.btnDejar);
             this.Controls.Add(this.cbDB);
-            this.Controls.Add(this.dgDB);
             this.Controls.Add(this.btnBorrar);
             this.Controls.Add(this.btnUsar);
             this.Controls.Add(this.btnCrear);
             this.Name = "Form1";
             this.Text = "Form1";
-            ((System.ComponentModel.ISupportInitialize)(this.dgDB)).EndInit();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -133,10 +130,10 @@ namespace proyectoGestor
         private System.Windows.Forms.Button btnCrear;
         private System.Windows.Forms.Button btnUsar;
         private System.Windows.Forms.Button btnBorrar;
-        private System.Windows.Forms.DataGridView dgDB;
         public System.Windows.Forms.ComboBox cbDB;
         private System.Windows.Forms.Button btnDejar;
         public System.Windows.Forms.Button btnModificar;
+        private System.Windows.Forms.Label label1;
     }
 }
 
