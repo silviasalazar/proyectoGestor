@@ -33,8 +33,7 @@ namespace proyectoGestor
             this.btnBorrarTabla = new System.Windows.Forms.Button();
             this.btnModificarTabla = new System.Windows.Forms.Button();
             this.btnInsertarRegistros = new System.Windows.Forms.Button();
-            this.btnBorrarRegistros = new System.Windows.Forms.Button();
-            this.btnRegresarMenu = new System.Windows.Forms.Button();
+            this.btnSalir = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // btnCrearTabla
@@ -77,32 +76,22 @@ namespace proyectoGestor
             this.btnInsertarRegistros.UseVisualStyleBackColor = true;
             this.btnInsertarRegistros.Click += new System.EventHandler(this.btnInsertarRegistros_Click);
             // 
-            // btnBorrarRegistros
+            // btnSalir
             // 
-            this.btnBorrarRegistros.Location = new System.Drawing.Point(37, 313);
-            this.btnBorrarRegistros.Name = "btnBorrarRegistros";
-            this.btnBorrarRegistros.Size = new System.Drawing.Size(177, 51);
-            this.btnBorrarRegistros.TabIndex = 4;
-            this.btnBorrarRegistros.Text = "Borrar registros";
-            this.btnBorrarRegistros.UseVisualStyleBackColor = true;
-            // 
-            // btnRegresarMenu
-            // 
-            this.btnRegresarMenu.Location = new System.Drawing.Point(37, 384);
-            this.btnRegresarMenu.Name = "btnRegresarMenu";
-            this.btnRegresarMenu.Size = new System.Drawing.Size(177, 54);
-            this.btnRegresarMenu.TabIndex = 5;
-            this.btnRegresarMenu.Text = "Regresar";
-            this.btnRegresarMenu.UseVisualStyleBackColor = true;
-            this.btnRegresarMenu.Click += new System.EventHandler(this.btnRegresarMenu_Click);
+            this.btnSalir.Location = new System.Drawing.Point(37, 313);
+            this.btnSalir.Name = "btnSalir";
+            this.btnSalir.Size = new System.Drawing.Size(177, 51);
+            this.btnSalir.TabIndex = 4;
+            this.btnSalir.Text = "Salir";
+            this.btnSalir.UseVisualStyleBackColor = true;
+            this.btnSalir.Click += new System.EventHandler(this.btnSalir_Click);
             // 
             // frmModificar
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.btnRegresarMenu);
-            this.Controls.Add(this.btnBorrarRegistros);
+            this.Controls.Add(this.btnSalir);
             this.Controls.Add(this.btnInsertarRegistros);
             this.Controls.Add(this.btnModificarTabla);
             this.Controls.Add(this.btnBorrarTabla);
@@ -115,12 +104,10 @@ namespace proyectoGestor
         }
 
         #endregion
-
-        public System.Windows.Forms.Button btnRegresarMenu;
         public System.Windows.Forms.Button btnCrearTabla;
         public System.Windows.Forms.Button btnBorrarTabla;
         public System.Windows.Forms.Button btnModificarTabla;
         public System.Windows.Forms.Button btnInsertarRegistros;
-        public System.Windows.Forms.Button btnBorrarRegistros;
+        public System.Windows.Forms.Button btnSalir;
     }
 }

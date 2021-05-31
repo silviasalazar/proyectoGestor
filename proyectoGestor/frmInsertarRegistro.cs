@@ -59,8 +59,47 @@ namespace proyectoGestor
         }
 
         private void btnInsertar_Click(object sender, EventArgs e)
-        {
+        { 
+            try
+            {
+                if(textBox1.Text!=" ")
+                {
+                    string cadena = textBox1.Text;
+                    connection.Open();
+                    MySqlCommand command = new MySqlCommand("INSERT INTO " + seleccionada + " VALUES (" + cadena + ");", connection);
+                    command.ExecuteNonQuery();
+                    connection.Close();
+                    MessageBox.Show(this, "Datos insertados exitosamente");
 
+                }
+                else
+                {
+                    MessageBox.Show(this, "Inserta los datos a registrar");
+                }
+                
+
+            }
+            catch { MessageBox.Show(this, "No se pudieron insertar los datos"); }
+            
+        }
+
+        private void btnRefresh_Click(object sender, EventArgs e)
+        {
+            connection.Open();
+            MySqlCommand comando = new MySqlCommand("select * from " + seleccionada + ";", connection);
+            MySqlDataAdapter adaptador = new MySqlDataAdapter();
+            adaptador.SelectCommand = comando;
+            DataTable tabla = new DataTable();
+            adaptador.Fill(tabla);
+            dgvRegistros.DataSource = tabla;
+            connection.Close();
+            dgvRegistros.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.AllCells;
+
+        }
+
+        private void btnCancelar_Click(object sender, EventArgs e)
+        {
+            this.Close();
         }
     }
 }

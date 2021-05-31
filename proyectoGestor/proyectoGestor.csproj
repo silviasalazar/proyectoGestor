@@ -95,6 +95,12 @@
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
+    <Compile Include="frmActualizarRegistro.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmActualizarRegistro.Designer.cs">
+      <DependentUpon>frmActualizarRegistro.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmAgregarCampos.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -143,6 +149,12 @@
     <Compile Include="frmInsertarRegistro.Designer.cs">
       <DependentUpon>frmInsertarRegistro.cs</DependentUpon>
     </Compile>
+    <Compile Include="frmListarPorcs.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmListarPorcs.Designer.cs">
+      <DependentUpon>frmListarPorcs.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmModificar.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -172,6 +184,9 @@
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="frmActualizarRegistro.resx">
+      <DependentUpon>frmActualizarRegistro.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frmAgregarCampos.resx">
       <DependentUpon>frmAgregarCampos.cs</DependentUpon>
     </EmbeddedResource>
@@ -195,6 +210,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="frmInsertarRegistro.resx">
       <DependentUpon>frmInsertarRegistro.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmListarPorcs.resx">
+      <DependentUpon>frmListarPorcs.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmModificar.resx">
       <DependentUpon>frmModificar.cs</DependentUpon>

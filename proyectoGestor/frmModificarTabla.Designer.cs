@@ -36,6 +36,8 @@ namespace proyectoGestor
             this.btnInsertarRegistro = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.btnEliminarRegistro = new System.Windows.Forms.Button();
+            this.btnActulizarRegistro = new System.Windows.Forms.Button();
+            this.btnMostrarPor = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // btnRenombrar
@@ -106,11 +108,33 @@ namespace proyectoGestor
             this.btnEliminarRegistro.UseVisualStyleBackColor = true;
             this.btnEliminarRegistro.Click += new System.EventHandler(this.btnEliminarRegistro_Click);
             // 
+            // btnActulizarRegistro
+            // 
+            this.btnActulizarRegistro.Location = new System.Drawing.Point(33, 263);
+            this.btnActulizarRegistro.Name = "btnActulizarRegistro";
+            this.btnActulizarRegistro.Size = new System.Drawing.Size(167, 40);
+            this.btnActulizarRegistro.TabIndex = 7;
+            this.btnActulizarRegistro.Text = "Actualizar registro";
+            this.btnActulizarRegistro.UseVisualStyleBackColor = true;
+            this.btnActulizarRegistro.Click += new System.EventHandler(this.btnActulizarRegistro_Click);
+            // 
+            // btnMostrarPor
+            // 
+            this.btnMostrarPor.Location = new System.Drawing.Point(33, 309);
+            this.btnMostrarPor.Name = "btnMostrarPor";
+            this.btnMostrarPor.Size = new System.Drawing.Size(167, 40);
+            this.btnMostrarPor.TabIndex = 8;
+            this.btnMostrarPor.Text = "Listar por ...";
+            this.btnMostrarPor.UseVisualStyleBackColor = true;
+            this.btnMostrarPor.Click += new System.EventHandler(this.btnMostrarPor_Click);
+            // 
             // frmModificarTabla
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(638, 301);
+            this.ClientSize = new System.Drawing.Size(638, 405);
+            this.Controls.Add(this.btnMostrarPor);
+            this.Controls.Add(this.btnActulizarRegistro);
             this.Controls.Add(this.btnEliminarRegistro);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.btnInsertarRegistro);
@@ -134,5 +158,7 @@ namespace proyectoGestor
         public System.Windows.Forms.Button btnInsertarRegistro;
         private System.Windows.Forms.Label label1;
         public System.Windows.Forms.Button btnEliminarRegistro;
+        public System.Windows.Forms.Button btnActulizarRegistro;
+        public System.Windows.Forms.Button btnMostrarPor;
     }
 }

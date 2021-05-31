@@ -36,5 +36,10 @@ namespace proyectoGestor
         {
             string columna = cbColumna.Text;
         }
+
+        private void btnEliminar_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

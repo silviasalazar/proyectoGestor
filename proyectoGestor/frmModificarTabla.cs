@@ -174,7 +174,7 @@ namespace proyectoGestor
                     {
                         for (int j = 0; j < (insertaRegistro.dgvRegistros.Columns.Count)-1; j++)
                         {
-                            MySqlCommand command = new MySqlCommand("insert into " + seleccionada + " values (" + insertaRegistro.dgvRegistros.Rows[i].Cells[j].Value + "); ", connection);
+                            MySqlCommand command = new MySqlCommand("CREATE TRIGGER trigger_name AFTER INSERT ON "+ seleccionada +" FOR EACH ROW BEGIN INSERT INTO VALUES (CURRENT_USER(), NOW());", connection);
                             command.ExecuteNonQuery();
 
                         }
@@ -208,11 +208,12 @@ namespace proyectoGestor
 
             try
             {
-                string nombreColumna = eliminarRegistro.txtNombreColumna.Text;
-                string identificador = eliminarRegistro.txtIdentificador.Text;
+                
 
                 if (eliminarRegistro.ShowDialog() == DialogResult.OK)
                 {
+                    string nombreColumna = eliminarRegistro.txtNombreColumna.Text;
+                    string identificador = eliminarRegistro.txtIdentificador.Text;
 
 
                     connection.Open();
@@ -239,6 +240,54 @@ namespace proyectoGestor
                 MessageBox.Show("Error!!!");
             }
 
+        }
+
+        private void btnMostrarPor_Click(object sender, EventArgs e)
+        {
+            frmListarPorcs listarPor = new frmListarPorcs(bd, seleccionada);
+            listarPor.Show();
+           /* try
+            {
+                
+                if (listarPor.ShowDialog() == DialogResult.OK)
+                {
+                    string agrupa = listarPor.cbListar.Text;// columna por la que se mostrara
+                    connection.Open();
+                    
+
+                    // Datagrig view 
+                    MySqlCommand comando = new MySqlCommand("select " + agrupa + " from " + seleccionada + ";", connection);
+                    MySqlDataAdapter adaptador = new MySqlDataAdapter();
+                    adaptador.SelectCommand = comando;
+                    DataTable tabla = new DataTable();
+                    adaptador.Fill(tabla);
+                    listarPor.dgvListarPor.DataSource = tabla;
+                    listarPor.dgvListarPor.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.AllCells;
+                    connection.Close();
+                    MessageBox.Show("Agrupado por: " + agrupa);
+                   
+
+
+
+                }
+                else if (listarPor.ShowDialog() == DialogResult.Cancel)
+                {
+                    listarPor.Close();
+
+                }
+
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Error!!!");
+            }*/
+
+        }
+
+        private void btnActulizarRegistro_Click(object sender, EventArgs e)
+        {
+            frmActualizarRegistro actualizarRegistro = new frmActualizarRegistro(bd, seleccionada);
+            actualizarRegistro.Show();
         }
     }
     
