@@ -62,20 +62,24 @@ namespace proyectoGestor
         { 
             try
             {
-                if(textBox1.Text!=" ")
-                {
-                    string cadena = textBox1.Text;
-                    connection.Open();
-                    MySqlCommand command = new MySqlCommand("INSERT INTO " + seleccionada + " VALUES (" + cadena + ");", connection);
-                    command.ExecuteNonQuery();
-                    connection.Close();
-                    MessageBox.Show(this, "Datos insertados exitosamente");
+                
+                    if (textBox1.Text != null)
+                    {
+                        string cadena = textBox1.Text;
+                        connection.Open();
+                        MySqlCommand command = new MySqlCommand("INSERT INTO " + seleccionada + " VALUES (" + cadena + ");", connection);
+                        command.ExecuteNonQuery();
+                        connection.Close();
+                        MessageBox.Show(this, "Datos insertados exitosamente");
+                        textBox1.Clear();
 
-                }
-                else
-                {
-                    MessageBox.Show(this, "Inserta los datos a registrar");
-                }
+                    }
+                    else
+                    {
+                        MessageBox.Show(this, "Inserta los datos a registrar");
+                    }
+                
+               
                 
 
             }

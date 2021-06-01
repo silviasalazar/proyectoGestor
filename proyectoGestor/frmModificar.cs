@@ -106,8 +106,7 @@ namespace proyectoGestor
 
         private void btnInsertarRegistros_Click(object sender, EventArgs e)
         {
-            frmInsertaRegistro insertar = new frmInsertaRegistro();
-            insertar.Show();
+            
         }
 
         private void btnRegresarMenu_Click(object sender, EventArgs e)

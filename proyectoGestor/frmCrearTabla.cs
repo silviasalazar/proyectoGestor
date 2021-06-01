@@ -26,7 +26,7 @@ namespace proyectoGestor
             comboBox1.Items.Add("SMALLINT");
             comboBox1.Items.Add("VARCHAR");
             comboBox1.Items.Add("CHAR");
-            comboBox1.Items.Add("DATE");
+            //comboBox1.Items.Add("DATE");
             cbLongitud.Items.Add("10");
             cbLongitud.Items.Add("15");
             cbLongitud.Items.Add("20");
@@ -38,8 +38,10 @@ namespace proyectoGestor
             this.bd = bd;
             connection = new MySqlConnection("Server=localhost;Database=" + bd + ";UserId=root;PWD=Unicornio123;");
 
-          
-            //connection.Open();
+           
+
+
+
 
 
         }
@@ -61,8 +63,9 @@ namespace proyectoGestor
         private void btnAgregarCampos_Click(object sender, EventArgs e)
         {
             txtNombreCampo.Clear();
-            txtNombreTabla.ReadOnly = true;
-            
+            comboBox1.ResetText();
+            cbLongitud.ResetText();
+
         }
        
         private void btnAceptar_Click(object sender, EventArgs e)
@@ -80,12 +83,16 @@ namespace proyectoGestor
 
                         if (tipoDato == "VARCHAR" | tipoDato == "CHAR")
                         {
-
-                            connection.Open();
-                            MySqlCommand command = new MySqlCommand("create table " + nombreTabla + "( " + nombreCampo + " " + tipoDato + " (" + longitud + "));", connection);
-                            command.ExecuteNonQuery();
-                            connection.Close();
-                            MessageBox.Show(this, "Tabla creada exitosamente");
+                            
+                                 connection.Open();
+                                MySqlCommand command = new MySqlCommand("create table " + nombreTabla + "( " + nombreCampo + " " + tipoDato + " (" + longitud + "));", connection);
+                                command.ExecuteNonQuery();
+                                connection.Close();
+                                MessageBox.Show(this, "Tabla creada exitosamente");
+                                txtNombreCampo.Clear();
+                                comboBox1.ResetText();
+                                cbLongitud.ResetText();
+                                
 
                         }
                         else if (tipoDato == "INT" | tipoDato == "TINYINT" | tipoDato == "SMALLINT" | tipoDato == "DATE")
@@ -96,8 +103,12 @@ namespace proyectoGestor
                             command.ExecuteNonQuery();
                             connection.Close();
                             MessageBox.Show(this, "Tabla creada exitosamente");
+                            txtNombreCampo.Clear();
+                            comboBox1.ResetText();
+                            cbLongitud.ResetText();
 
                         }
+                        
 
                     
                 }
@@ -113,13 +124,33 @@ namespace proyectoGestor
         {
             
             string tipoDato = comboBox1.Text;
+            /* if(comboBox1.Text=="INT")
+             {
+                 cbLongitud.Enabled = false;
+             }*/
 
-           
+            if (tipoDato == "VARCHAR" | tipoDato == "CHAR")
+            {
+
+                cbLongitud.Enabled = true;
+
+
+            }
+            else if (tipoDato == "INT" | tipoDato == "TINYINT" | tipoDato == "SMALLINT")
+            {
+
+                cbLongitud.Enabled = false;
+
+            }
+
+
         }
 
         private void cbLongitud_SelectedIndexChanged(object sender, EventArgs e)
         {
             string longitud = cbLongitud.Text;
+            //cbLongitud.Enabled = (comboBox1.Text=="INT");
+            
         }
 
         private void comboBox1_Click(object sender, EventArgs e)
@@ -145,6 +176,9 @@ namespace proyectoGestor
                     command.ExecuteNonQuery();
                     connection.Close();
                     MessageBox.Show(this, "campo agregado exitosamente");
+                    txtNombreCampo.Clear();
+                    comboBox1.ResetText();
+                    cbLongitud.ResetText();
 
                 }
                 else if (tipoDato == "INT" | tipoDato == "TINYINT" | tipoDato == "SMALLINT" | tipoDato == "DATE")
@@ -155,6 +189,9 @@ namespace proyectoGestor
                     command.ExecuteNonQuery();
                     connection.Close();
                     MessageBox.Show(this, "campo agregado exitosamente");
+                    txtNombreCampo.Clear();
+                    comboBox1.ResetText();
+                    cbLongitud.ResetText();
 
                 }
 

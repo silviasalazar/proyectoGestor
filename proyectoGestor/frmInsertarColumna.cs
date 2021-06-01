@@ -33,6 +33,19 @@ namespace proyectoGestor
         private void cbTipoDato_SelectedIndexChanged(object sender, EventArgs e)
         {
             string tipo = cbTipoDato.Text;
+            if (tipo == "VARCHAR" | tipo == "CHAR")
+            {
+
+                cbLongitud.Enabled = true;
+
+
+            }
+            else if (tipo == "INT" | tipo == "TINYINT" | tipo == "SMALLINT")
+            {
+
+                cbLongitud.Enabled = false;
+
+            }
 
 
         }

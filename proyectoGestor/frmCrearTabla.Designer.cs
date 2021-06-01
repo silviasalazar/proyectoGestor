@@ -33,7 +33,6 @@ namespace proyectoGestor
             this.txtNombreTabla = new System.Windows.Forms.TextBox();
             this.btnAceptar = new System.Windows.Forms.Button();
             this.btnCancelar = new System.Windows.Forms.Button();
-            this.btnAgregarCampos = new System.Windows.Forms.Button();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
@@ -76,24 +75,13 @@ namespace proyectoGestor
             // 
             this.btnCancelar.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.btnCancelar.DialogResult = System.Windows.Forms.DialogResult.Cancel;
-            this.btnCancelar.Location = new System.Drawing.Point(504, 190);
+            this.btnCancelar.Location = new System.Drawing.Point(504, 160);
             this.btnCancelar.Name = "btnCancelar";
             this.btnCancelar.Size = new System.Drawing.Size(183, 45);
             this.btnCancelar.TabIndex = 3;
             this.btnCancelar.Text = "Salir";
             this.btnCancelar.UseVisualStyleBackColor = false;
             this.btnCancelar.Click += new System.EventHandler(this.btnCancelar_Click);
-            // 
-            // btnAgregarCampos
-            // 
-            this.btnAgregarCampos.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.btnAgregarCampos.Location = new System.Drawing.Point(503, 75);
-            this.btnAgregarCampos.Name = "btnAgregarCampos";
-            this.btnAgregarCampos.Size = new System.Drawing.Size(182, 52);
-            this.btnAgregarCampos.TabIndex = 5;
-            this.btnAgregarCampos.Text = "Agregar otro campo";
-            this.btnAgregarCampos.UseVisualStyleBackColor = false;
-            this.btnAgregarCampos.Click += new System.EventHandler(this.btnAgregarCampos_Click);
             // 
             // label2
             // 
@@ -152,7 +140,7 @@ namespace proyectoGestor
             // btnGuardarNuevoCampo
             // 
             this.btnGuardarNuevoCampo.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.btnGuardarNuevoCampo.Location = new System.Drawing.Point(504, 133);
+            this.btnGuardarNuevoCampo.Location = new System.Drawing.Point(504, 86);
             this.btnGuardarNuevoCampo.Name = "btnGuardarNuevoCampo";
             this.btnGuardarNuevoCampo.Size = new System.Drawing.Size(182, 51);
             this.btnGuardarNuevoCampo.TabIndex = 13;
@@ -173,7 +161,6 @@ namespace proyectoGestor
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
-            this.Controls.Add(this.btnAgregarCampos);
             this.Controls.Add(this.btnCancelar);
             this.Controls.Add(this.btnAceptar);
             this.Controls.Add(this.txtNombreTabla);
@@ -192,7 +179,6 @@ namespace proyectoGestor
         public System.Windows.Forms.TextBox txtNombreTabla;
         public System.Windows.Forms.Button btnAceptar;
         public System.Windows.Forms.Button btnCancelar;
-        public System.Windows.Forms.Button btnAgregarCampos;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;

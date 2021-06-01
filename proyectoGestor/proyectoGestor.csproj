@@ -137,12 +137,6 @@
     <Compile Include="frmInsertarColumna.Designer.cs">
       <DependentUpon>frmInsertarColumna.cs</DependentUpon>
     </Compile>
-    <Compile Include="frmInsertaRegistro.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="frmInsertaRegistro.Designer.cs">
-      <DependentUpon>frmInsertaRegistro.cs</DependentUpon>
-    </Compile>
     <Compile Include="frmInsertarRegistro.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -204,9 +198,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="frmInsertarColumna.resx">
       <DependentUpon>frmInsertarColumna.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="frmInsertaRegistro.resx">
-      <DependentUpon>frmInsertaRegistro.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmInsertarRegistro.resx">
       <DependentUpon>frmInsertarRegistro.cs</DependentUpon>

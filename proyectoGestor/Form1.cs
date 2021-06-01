@@ -66,6 +66,16 @@ namespace proyectoGestor
                     connection.Close();
                     MessageBox.Show(this, "Base de datos creada exitosamente");
 
+                    connection.Open();
+                    //MySqlCommand comando = new MySqlCommand("show databases;", connection);
+                    MySqlDataAdapter adaptador = new MySqlDataAdapter("show databases;", connection);
+                    //adaptador.SelectCommand = comando;
+                    DataTable tabla = new DataTable();
+                    adaptador.Fill(tabla);
+                    cbDB.DataSource = tabla;
+                    cbDB.ValueMember = "Database";
+                    connection.Close();
+
                 }
 
             }

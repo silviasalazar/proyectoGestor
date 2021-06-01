@@ -48,29 +48,37 @@ namespace proyectoGestor
 
             try
             {
-
-                if (renombrar.ShowDialog() == DialogResult.OK)
+                if (seleccionada == null)
                 {
-                    string nombreNuevo = renombrar.txtNuevoNombre.Text;
-
-                    connection.Open();
-                    MySqlCommand command = new MySqlCommand("ALTER TABLE " + seleccionada +" RENAME " + nombreNuevo +";", connection);
-                    command.ExecuteNonQuery();
-                    MySqlDataAdapter adaptador = new MySqlDataAdapter("show tables from " + bd + ";", connection);
-                    //adaptador.SelectCommand = comando;
-                    DataTable tabla = new DataTable();
-                    adaptador.Fill(tabla);
-                    comboBox1.DataSource = tabla;
-                    comboBox1.ValueMember = "Tables_in_" + bd;
-                    connection.Close();
-                    MessageBox.Show(this, "Nombre de tabla cambiado exitosamente");
-
+                    MessageBox.Show(this, "Seleccione una base de datos");
                 }
-                else if (renombrar.ShowDialog() == DialogResult.Cancel)
+                else
                 {
-                    renombrar.Close();
+                    if (renombrar.ShowDialog() == DialogResult.OK)
+                    {
+                        string nombreNuevo = renombrar.txtNuevoNombre.Text;
 
+                        connection.Open();
+                        MySqlCommand command = new MySqlCommand("ALTER TABLE " + seleccionada + " RENAME " + nombreNuevo + ";", connection);
+                        command.ExecuteNonQuery();
+                        MySqlDataAdapter adaptador = new MySqlDataAdapter("show tables from " + bd + ";", connection);
+                        //adaptador.SelectCommand = comando;
+                        DataTable tabla = new DataTable();
+                        adaptador.Fill(tabla);
+                        comboBox1.DataSource = tabla;
+                        comboBox1.ValueMember = "Tables_in_" + bd;
+                        connection.Close();
+                        MessageBox.Show(this, "Nombre de tabla cambiado exitosamente");
+
+                    }
+                    else if (renombrar.ShowDialog() == DialogResult.Cancel)
+                    {
+                        renombrar.Close();
+
+                    }
                 }
+
+               
 
             }
             catch (Exception ex)
@@ -132,27 +140,31 @@ namespace proyectoGestor
         private void btnEliminarColumna_Click(object sender, EventArgs e)
         {
             frmEliminarColumna eliminarColumna = new frmEliminarColumna(bd, seleccionada);
+           
 
             try
             {
+                
+                    if (eliminarColumna.ShowDialog() == DialogResult.OK)
+                    {
+                        string columna = eliminarColumna.cbColumna.Text;
 
-                if (eliminarColumna.ShowDialog() == DialogResult.OK)
-                {
-                    string columna = eliminarColumna.cbColumna.Text;
+                        connection.Open();
+                        MySqlCommand command = new MySqlCommand("ALTER TABLE " + seleccionada + " DROP COLUMN " + columna + ";", connection);
+                        command.ExecuteNonQuery();
 
-                    connection.Open();
-                    MySqlCommand command = new MySqlCommand("ALTER TABLE " + seleccionada + " DROP COLUMN " + columna+ "; ", connection);
-                    command.ExecuteNonQuery();
-                    
-                    connection.Close();
-                    MessageBox.Show(this, "Columna eliminada");
+                        connection.Close();
+                        MessageBox.Show(this, "Columna eliminada");
 
-                }
-                else if (eliminarColumna.ShowDialog() == DialogResult.Cancel)
-                {
-                    eliminarColumna.Close();
+                    }
+                    else if (eliminarColumna.ShowDialog() == DialogResult.Cancel)
+                    {
+                        eliminarColumna.Close();
 
-                }
+                    }
+                
+
+                
 
             }
             catch (Exception ex)
