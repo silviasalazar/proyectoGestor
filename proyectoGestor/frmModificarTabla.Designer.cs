@@ -153,7 +153,7 @@ namespace proyectoGestor
             this.Controls.Add(this.btnRenombrar);
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Name = "frmModificarTabla";
-            this.Text = "frmModificarTabla";
+            this.Text = "Modificar tabla";
             this.Load += new System.EventHandler(this.frmModificarTabla_Load);
             this.ResumeLayout(false);
             this.PerformLayout();

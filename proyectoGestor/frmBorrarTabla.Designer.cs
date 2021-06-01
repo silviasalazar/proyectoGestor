@@ -89,7 +89,7 @@ namespace proyectoGestor
             this.Controls.Add(this.label1);
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Name = "frmBorrarTabla";
-            this.Text = "frmBorrarTabla";
+            this.Text = "Borrar tabla";
             this.Load += new System.EventHandler(this.frmBorrarTabla_Load);
             this.ResumeLayout(false);
             this.PerformLayout();

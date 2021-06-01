@@ -140,7 +140,7 @@ namespace proyectoGestor
             this.Controls.Add(this.label1);
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Name = "frmAgregarCampos";
-            this.Text = "frmAgregarCampos";
+            this.Text = "Agregar columna";
             this.ResumeLayout(false);
             this.PerformLayout();
 

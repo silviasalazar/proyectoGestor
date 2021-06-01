@@ -157,7 +157,7 @@ namespace proyectoGestor
             this.Controls.Add(this.label1);
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Name = "frmListarPorcs";
-            this.Text = "frmListarPorcs";
+            this.Text = "Listar por condiciones";
             this.Load += new System.EventHandler(this.frmListarPorcs_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgvListarPor)).EndInit();
             this.ResumeLayout(false);

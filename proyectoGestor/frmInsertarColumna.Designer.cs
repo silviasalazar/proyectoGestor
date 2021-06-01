@@ -131,7 +131,7 @@ namespace proyectoGestor
             this.Controls.Add(this.txtNombreColumna);
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Name = "frmInsertarColumna";
-            this.Text = "frmInsertarColumna";
+            this.Text = "Insertar columna";
             this.ResumeLayout(false);
             this.PerformLayout();
 

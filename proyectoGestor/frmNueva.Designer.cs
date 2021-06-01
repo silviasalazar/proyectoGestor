@@ -86,7 +86,7 @@ namespace proyectoGestor
             this.Controls.Add(this.txtNombre);
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Name = "frmNueva";
-            this.Text = "frmNueva";
+            this.Text = "Crear base de datos";
             this.ResumeLayout(false);
             this.PerformLayout();
 

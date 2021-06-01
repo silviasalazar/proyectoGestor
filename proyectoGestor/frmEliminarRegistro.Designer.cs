@@ -120,7 +120,7 @@ namespace proyectoGestor
             this.Controls.Add(this.dgvRegistros);
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Name = "frmEliminarRegistro";
-            this.Text = "frmEliminarRegistro";
+            this.Text = "Eliminar registro";
             ((System.ComponentModel.ISupportInitialize)(this.dgvRegistros)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
