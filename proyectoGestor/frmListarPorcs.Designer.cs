@@ -53,6 +53,7 @@ namespace proyectoGestor
             // 
             // cbListar
             // 
+            this.cbListar.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cbListar.FormattingEnabled = true;
             this.cbListar.Location = new System.Drawing.Point(428, 31);
             this.cbListar.Name = "cbListar";
@@ -106,6 +107,7 @@ namespace proyectoGestor
             // 
             // cbCondicion
             // 
+            this.cbCondicion.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cbCondicion.FormattingEnabled = true;
             this.cbCondicion.Location = new System.Drawing.Point(107, 92);
             this.cbCondicion.Name = "cbCondicion";

@@ -57,6 +57,7 @@ namespace proyectoGestor
             // 
             // cbTipoDato
             // 
+            this.cbTipoDato.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cbTipoDato.FormattingEnabled = true;
             this.cbTipoDato.Location = new System.Drawing.Point(172, 65);
             this.cbTipoDato.Name = "cbTipoDato";
@@ -84,6 +85,7 @@ namespace proyectoGestor
             // 
             // cbLongitud
             // 
+            this.cbLongitud.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cbLongitud.FormattingEnabled = true;
             this.cbLongitud.Location = new System.Drawing.Point(172, 116);
             this.cbLongitud.Name = "cbLongitud";

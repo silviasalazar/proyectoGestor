@@ -73,6 +73,7 @@ namespace proyectoGestor
             // 
             // cbDB
             // 
+            this.cbDB.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cbDB.FormattingEnabled = true;
             this.cbDB.Location = new System.Drawing.Point(410, 60);
             this.cbDB.Name = "cbDB";

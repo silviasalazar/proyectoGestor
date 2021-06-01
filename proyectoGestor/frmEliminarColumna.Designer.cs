@@ -46,6 +46,7 @@ namespace proyectoGestor
             // 
             // cbColumna
             // 
+            this.cbColumna.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cbColumna.FormattingEnabled = true;
             this.cbColumna.Location = new System.Drawing.Point(39, 55);
             this.cbColumna.Name = "cbColumna";

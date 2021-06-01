@@ -120,6 +120,7 @@ namespace proyectoGestor
             // 
             // comboBox1
             // 
+            this.comboBox1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.comboBox1.FormattingEnabled = true;
             this.comboBox1.Location = new System.Drawing.Point(171, 113);
             this.comboBox1.Name = "comboBox1";
@@ -130,6 +131,7 @@ namespace proyectoGestor
             // 
             // cbLongitud
             // 
+            this.cbLongitud.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cbLongitud.FormattingEnabled = true;
             this.cbLongitud.Location = new System.Drawing.Point(171, 160);
             this.cbLongitud.Name = "cbLongitud";
