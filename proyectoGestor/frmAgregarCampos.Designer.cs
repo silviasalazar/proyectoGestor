@@ -43,87 +43,91 @@ namespace proyectoGestor
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(57, 27);
+            this.label1.Location = new System.Drawing.Point(64, 27);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(66, 17);
+            this.label1.Size = new System.Drawing.Size(74, 17);
             this.label1.TabIndex = 0;
             this.label1.Text = "Nombre: ";
             // 
             // txtNombreCampo
             // 
-            this.txtNombreCampo.Location = new System.Drawing.Point(129, 24);
+            this.txtNombreCampo.Location = new System.Drawing.Point(145, 24);
             this.txtNombreCampo.Name = "txtNombreCampo";
-            this.txtNombreCampo.Size = new System.Drawing.Size(178, 22);
+            this.txtNombreCampo.Size = new System.Drawing.Size(200, 22);
             this.txtNombreCampo.TabIndex = 1;
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(73, 69);
+            this.label2.Location = new System.Drawing.Point(82, 69);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(40, 17);
+            this.label2.Size = new System.Drawing.Size(45, 17);
             this.label2.TabIndex = 2;
             this.label2.Text = "Tipo:";
             // 
             // comboBox1
             // 
             this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(129, 69);
+            this.comboBox1.Location = new System.Drawing.Point(145, 69);
             this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(178, 24);
+            this.comboBox1.Size = new System.Drawing.Size(200, 24);
             this.comboBox1.TabIndex = 3;
             this.comboBox1.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
             // 
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(46, 116);
+            this.label3.Location = new System.Drawing.Point(52, 116);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(67, 17);
+            this.label3.Size = new System.Drawing.Size(76, 17);
             this.label3.TabIndex = 4;
             this.label3.Text = "Longitud:";
             // 
             // txtLongitud
             // 
-            this.txtLongitud.Location = new System.Drawing.Point(129, 116);
+            this.txtLongitud.Location = new System.Drawing.Point(145, 116);
             this.txtLongitud.Name = "txtLongitud";
-            this.txtLongitud.Size = new System.Drawing.Size(178, 22);
+            this.txtLongitud.Size = new System.Drawing.Size(200, 22);
             this.txtLongitud.TabIndex = 5;
             // 
             // btnAceptarCampo
             // 
-            this.btnAceptarCampo.Location = new System.Drawing.Point(408, 20);
+            this.btnAceptarCampo.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.btnAceptarCampo.Location = new System.Drawing.Point(459, 20);
             this.btnAceptarCampo.Name = "btnAceptarCampo";
-            this.btnAceptarCampo.Size = new System.Drawing.Size(126, 42);
+            this.btnAceptarCampo.Size = new System.Drawing.Size(142, 42);
             this.btnAceptarCampo.TabIndex = 6;
             this.btnAceptarCampo.Text = "Aceptar";
-            this.btnAceptarCampo.UseVisualStyleBackColor = true;
+            this.btnAceptarCampo.UseVisualStyleBackColor = false;
             this.btnAceptarCampo.Click += new System.EventHandler(this.btnAceptarCampo_Click);
             // 
             // btnAgregarOtro
             // 
-            this.btnAgregarOtro.Location = new System.Drawing.Point(408, 69);
+            this.btnAgregarOtro.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.btnAgregarOtro.Location = new System.Drawing.Point(459, 69);
             this.btnAgregarOtro.Name = "btnAgregarOtro";
-            this.btnAgregarOtro.Size = new System.Drawing.Size(126, 46);
+            this.btnAgregarOtro.Size = new System.Drawing.Size(142, 46);
             this.btnAgregarOtro.TabIndex = 7;
             this.btnAgregarOtro.Text = "Agregar otro campo";
-            this.btnAgregarOtro.UseVisualStyleBackColor = true;
+            this.btnAgregarOtro.UseVisualStyleBackColor = false;
             this.btnAgregarOtro.Click += new System.EventHandler(this.btnAgregarOtro_Click);
             // 
             // btnSalir
             // 
-            this.btnSalir.Location = new System.Drawing.Point(408, 122);
+            this.btnSalir.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.btnSalir.Location = new System.Drawing.Point(459, 122);
             this.btnSalir.Name = "btnSalir";
-            this.btnSalir.Size = new System.Drawing.Size(126, 42);
+            this.btnSalir.Size = new System.Drawing.Size(142, 42);
             this.btnSalir.TabIndex = 8;
             this.btnSalir.Text = "Salir";
-            this.btnSalir.UseVisualStyleBackColor = true;
+            this.btnSalir.UseVisualStyleBackColor = false;
             // 
             // frmAgregarCampos
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(557, 202);
+            this.BackColor = System.Drawing.Color.White;
+            this.ClientSize = new System.Drawing.Size(627, 202);
             this.Controls.Add(this.btnSalir);
             this.Controls.Add(this.btnAgregarOtro);
             this.Controls.Add(this.btnAceptarCampo);
@@ -133,6 +137,7 @@ namespace proyectoGestor
             this.Controls.Add(this.label2);
             this.Controls.Add(this.txtNombreCampo);
             this.Controls.Add(this.label1);
+            this.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Name = "frmAgregarCampos";
             this.Text = "frmAgregarCampos";
             this.ResumeLayout(false);

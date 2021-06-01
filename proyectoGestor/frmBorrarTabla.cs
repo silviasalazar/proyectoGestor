@@ -41,5 +41,10 @@ namespace proyectoGestor
         {
 
         }
+
+        private void frmBorrarTabla_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

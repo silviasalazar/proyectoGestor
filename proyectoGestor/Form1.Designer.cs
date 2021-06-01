@@ -40,77 +40,83 @@ namespace proyectoGestor
             // 
             // btnCrear
             // 
-            this.btnCrear.Location = new System.Drawing.Point(24, 29);
+            this.btnCrear.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.btnCrear.Location = new System.Drawing.Point(27, 29);
             this.btnCrear.Name = "btnCrear";
-            this.btnCrear.Size = new System.Drawing.Size(191, 55);
+            this.btnCrear.Size = new System.Drawing.Size(215, 55);
             this.btnCrear.TabIndex = 0;
             this.btnCrear.Text = "Crear base de datos";
-            this.btnCrear.UseVisualStyleBackColor = true;
+            this.btnCrear.UseVisualStyleBackColor = false;
             this.btnCrear.Click += new System.EventHandler(this.btnCrear_Click);
             // 
             // btnUsar
             // 
-            this.btnUsar.Location = new System.Drawing.Point(24, 111);
+            this.btnUsar.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.btnUsar.Location = new System.Drawing.Point(27, 111);
             this.btnUsar.Name = "btnUsar";
-            this.btnUsar.Size = new System.Drawing.Size(191, 55);
+            this.btnUsar.Size = new System.Drawing.Size(215, 55);
             this.btnUsar.TabIndex = 1;
             this.btnUsar.Text = "Usar base de datos";
-            this.btnUsar.UseVisualStyleBackColor = true;
+            this.btnUsar.UseVisualStyleBackColor = false;
             this.btnUsar.Click += new System.EventHandler(this.btnUsar_Click);
             // 
             // btnBorrar
             // 
-            this.btnBorrar.Location = new System.Drawing.Point(24, 268);
+            this.btnBorrar.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.btnBorrar.Location = new System.Drawing.Point(27, 268);
             this.btnBorrar.Name = "btnBorrar";
-            this.btnBorrar.Size = new System.Drawing.Size(191, 55);
+            this.btnBorrar.Size = new System.Drawing.Size(215, 55);
             this.btnBorrar.TabIndex = 2;
             this.btnBorrar.Text = "Borrar base de datos";
-            this.btnBorrar.UseVisualStyleBackColor = true;
+            this.btnBorrar.UseVisualStyleBackColor = false;
             this.btnBorrar.Click += new System.EventHandler(this.btnBorrar_Click);
             // 
             // cbDB
             // 
             this.cbDB.FormattingEnabled = true;
-            this.cbDB.Location = new System.Drawing.Point(364, 60);
+            this.cbDB.Location = new System.Drawing.Point(410, 60);
             this.cbDB.Name = "cbDB";
-            this.cbDB.Size = new System.Drawing.Size(240, 24);
+            this.cbDB.Size = new System.Drawing.Size(270, 24);
             this.cbDB.TabIndex = 4;
             this.cbDB.SelectedIndexChanged += new System.EventHandler(this.cbDB_SelectedIndexChanged);
             // 
             // btnDejar
             // 
-            this.btnDejar.Location = new System.Drawing.Point(24, 193);
+            this.btnDejar.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.btnDejar.Location = new System.Drawing.Point(27, 193);
             this.btnDejar.Name = "btnDejar";
-            this.btnDejar.Size = new System.Drawing.Size(191, 55);
+            this.btnDejar.Size = new System.Drawing.Size(215, 55);
             this.btnDejar.TabIndex = 5;
             this.btnDejar.Text = "Dejar de usar base de datos";
-            this.btnDejar.UseVisualStyleBackColor = true;
+            this.btnDejar.UseVisualStyleBackColor = false;
             this.btnDejar.Click += new System.EventHandler(this.btnDejar_Click);
             // 
             // btnModificar
             // 
-            this.btnModificar.Location = new System.Drawing.Point(24, 347);
+            this.btnModificar.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.btnModificar.Location = new System.Drawing.Point(27, 347);
             this.btnModificar.Name = "btnModificar";
-            this.btnModificar.Size = new System.Drawing.Size(191, 55);
+            this.btnModificar.Size = new System.Drawing.Size(215, 55);
             this.btnModificar.TabIndex = 6;
             this.btnModificar.Text = "Modificar base de datos";
-            this.btnModificar.UseVisualStyleBackColor = true;
+            this.btnModificar.UseVisualStyleBackColor = false;
             this.btnModificar.Click += new System.EventHandler(this.btnModificar_Click);
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(361, 29);
+            this.label1.Location = new System.Drawing.Point(406, 29);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(203, 17);
+            this.label1.Size = new System.Drawing.Size(232, 17);
             this.label1.TabIndex = 7;
             this.label1.Text = "Seleccione una base de datos:";
             // 
             // Form1
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.BackColor = System.Drawing.Color.White;
+            this.ClientSize = new System.Drawing.Size(720, 450);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.btnModificar);
             this.Controls.Add(this.btnDejar);
@@ -118,8 +124,9 @@ namespace proyectoGestor
             this.Controls.Add(this.btnBorrar);
             this.Controls.Add(this.btnUsar);
             this.Controls.Add(this.btnCrear);
+            this.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Name = "Form1";
-            this.Text = "Form1";
+            this.Text = "Inicio";
             this.ResumeLayout(false);
             this.PerformLayout();
 

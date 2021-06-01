@@ -42,74 +42,78 @@ namespace proyectoGestor
             // dgvRegistros
             // 
             this.dgvRegistros.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvRegistros.Location = new System.Drawing.Point(33, 111);
+            this.dgvRegistros.Location = new System.Drawing.Point(37, 111);
             this.dgvRegistros.Name = "dgvRegistros";
             this.dgvRegistros.RowHeadersWidth = 51;
             this.dgvRegistros.RowTemplate.Height = 24;
-            this.dgvRegistros.Size = new System.Drawing.Size(573, 320);
+            this.dgvRegistros.Size = new System.Drawing.Size(645, 320);
             this.dgvRegistros.TabIndex = 0;
             this.dgvRegistros.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvRegistros_CellContentClick);
             // 
             // btnInsertar
             // 
-            this.btnInsertar.Location = new System.Drawing.Point(647, 26);
+            this.btnInsertar.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.btnInsertar.Location = new System.Drawing.Point(728, 26);
             this.btnInsertar.Name = "btnInsertar";
-            this.btnInsertar.Size = new System.Drawing.Size(202, 46);
+            this.btnInsertar.Size = new System.Drawing.Size(227, 46);
             this.btnInsertar.TabIndex = 1;
             this.btnInsertar.Text = "Insertar";
-            this.btnInsertar.UseVisualStyleBackColor = true;
+            this.btnInsertar.UseVisualStyleBackColor = false;
             this.btnInsertar.Click += new System.EventHandler(this.btnInsertar_Click);
             // 
             // btnCancelar
             // 
-            this.btnCancelar.Location = new System.Drawing.Point(647, 78);
+            this.btnCancelar.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.btnCancelar.Location = new System.Drawing.Point(728, 78);
             this.btnCancelar.Name = "btnCancelar";
-            this.btnCancelar.Size = new System.Drawing.Size(202, 46);
+            this.btnCancelar.Size = new System.Drawing.Size(227, 46);
             this.btnCancelar.TabIndex = 2;
             this.btnCancelar.Text = "Cancelar";
-            this.btnCancelar.UseVisualStyleBackColor = true;
+            this.btnCancelar.UseVisualStyleBackColor = false;
             this.btnCancelar.Click += new System.EventHandler(this.btnCancelar_Click);
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(30, 29);
+            this.label1.Location = new System.Drawing.Point(34, 29);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(49, 17);
+            this.label1.Size = new System.Drawing.Size(55, 17);
             this.label1.TabIndex = 3;
             this.label1.Text = "Datos:";
             // 
             // textBox1
             // 
-            this.textBox1.Location = new System.Drawing.Point(94, 26);
+            this.textBox1.Location = new System.Drawing.Point(106, 26);
             this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(512, 22);
+            this.textBox1.Size = new System.Drawing.Size(576, 22);
             this.textBox1.TabIndex = 4;
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(91, 51);
+            this.label2.Location = new System.Drawing.Point(102, 51);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(370, 17);
+            this.label2.Size = new System.Drawing.Size(427, 17);
             this.label2.TabIndex = 5;
             this.label2.Text = "NOTA: Recuerda que si el dato es de tipo cadena lleva \' \'";
             // 
             // btnRefresh
             // 
-            this.btnRefresh.Location = new System.Drawing.Point(473, 447);
+            this.btnRefresh.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.btnRefresh.Location = new System.Drawing.Point(532, 447);
             this.btnRefresh.Name = "btnRefresh";
-            this.btnRefresh.Size = new System.Drawing.Size(133, 44);
+            this.btnRefresh.Size = new System.Drawing.Size(150, 44);
             this.btnRefresh.TabIndex = 6;
             this.btnRefresh.Text = "Refresh";
-            this.btnRefresh.UseVisualStyleBackColor = true;
+            this.btnRefresh.UseVisualStyleBackColor = false;
             this.btnRefresh.Click += new System.EventHandler(this.btnRefresh_Click);
             // 
             // frmInsertarRegistro
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(861, 503);
+            this.BackColor = System.Drawing.Color.White;
+            this.ClientSize = new System.Drawing.Size(969, 503);
             this.Controls.Add(this.btnRefresh);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.textBox1);
@@ -117,6 +121,7 @@ namespace proyectoGestor
             this.Controls.Add(this.btnCancelar);
             this.Controls.Add(this.btnInsertar);
             this.Controls.Add(this.dgvRegistros);
+            this.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Name = "frmInsertarRegistro";
             this.Text = "frmInsertarRegistro";
             ((System.ComponentModel.ISupportInitialize)(this.dgvRegistros)).EndInit();
