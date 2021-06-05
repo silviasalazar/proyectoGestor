@@ -36,6 +36,7 @@ namespace proyectoGestor
             this.btnDejar = new System.Windows.Forms.Button();
             this.btnModificar = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
+            this.btnSalir = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // btnCrear
@@ -112,12 +113,24 @@ namespace proyectoGestor
             this.label1.TabIndex = 7;
             this.label1.Text = "Seleccione una base de datos:";
             // 
+            // btnSalir
+            // 
+            this.btnSalir.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.btnSalir.Location = new System.Drawing.Point(27, 426);
+            this.btnSalir.Name = "btnSalir";
+            this.btnSalir.Size = new System.Drawing.Size(215, 55);
+            this.btnSalir.TabIndex = 8;
+            this.btnSalir.Text = "Salir";
+            this.btnSalir.UseVisualStyleBackColor = false;
+            this.btnSalir.Click += new System.EventHandler(this.btnSalir_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(720, 450);
+            this.ClientSize = new System.Drawing.Size(720, 514);
+            this.Controls.Add(this.btnSalir);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.btnModificar);
             this.Controls.Add(this.btnDejar);
@@ -142,6 +155,7 @@ namespace proyectoGestor
         private System.Windows.Forms.Button btnDejar;
         public System.Windows.Forms.Button btnModificar;
         private System.Windows.Forms.Label label1;
+        public System.Windows.Forms.Button btnSalir;
     }
 }
 

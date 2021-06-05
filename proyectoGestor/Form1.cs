@@ -260,5 +260,10 @@ namespace proyectoGestor
             else
                 MessageBox.Show(this, "Seleccione una base de datos", "Alerta", MessageBoxButtons.OK);
         }
+
+        private void btnSalir_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
     }
 }
