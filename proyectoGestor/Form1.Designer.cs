@@ -42,7 +42,7 @@ namespace proyectoGestor
             // btnCrear
             // 
             this.btnCrear.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.btnCrear.Location = new System.Drawing.Point(27, 29);
+            this.btnCrear.Location = new System.Drawing.Point(481, 66);
             this.btnCrear.Name = "btnCrear";
             this.btnCrear.Size = new System.Drawing.Size(215, 55);
             this.btnCrear.TabIndex = 0;
@@ -53,7 +53,7 @@ namespace proyectoGestor
             // btnUsar
             // 
             this.btnUsar.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.btnUsar.Location = new System.Drawing.Point(27, 111);
+            this.btnUsar.Location = new System.Drawing.Point(481, 127);
             this.btnUsar.Name = "btnUsar";
             this.btnUsar.Size = new System.Drawing.Size(215, 55);
             this.btnUsar.TabIndex = 1;
@@ -64,7 +64,7 @@ namespace proyectoGestor
             // btnBorrar
             // 
             this.btnBorrar.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.btnBorrar.Location = new System.Drawing.Point(27, 268);
+            this.btnBorrar.Location = new System.Drawing.Point(481, 249);
             this.btnBorrar.Name = "btnBorrar";
             this.btnBorrar.Size = new System.Drawing.Size(215, 55);
             this.btnBorrar.TabIndex = 2;
@@ -76,7 +76,7 @@ namespace proyectoGestor
             // 
             this.cbDB.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cbDB.FormattingEnabled = true;
-            this.cbDB.Location = new System.Drawing.Point(410, 60);
+            this.cbDB.Location = new System.Drawing.Point(27, 97);
             this.cbDB.Name = "cbDB";
             this.cbDB.Size = new System.Drawing.Size(270, 24);
             this.cbDB.TabIndex = 4;
@@ -85,7 +85,7 @@ namespace proyectoGestor
             // btnDejar
             // 
             this.btnDejar.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.btnDejar.Location = new System.Drawing.Point(27, 193);
+            this.btnDejar.Location = new System.Drawing.Point(481, 188);
             this.btnDejar.Name = "btnDejar";
             this.btnDejar.Size = new System.Drawing.Size(215, 55);
             this.btnDejar.TabIndex = 5;
@@ -96,7 +96,7 @@ namespace proyectoGestor
             // btnModificar
             // 
             this.btnModificar.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.btnModificar.Location = new System.Drawing.Point(27, 347);
+            this.btnModificar.Location = new System.Drawing.Point(481, 310);
             this.btnModificar.Name = "btnModificar";
             this.btnModificar.Size = new System.Drawing.Size(215, 55);
             this.btnModificar.TabIndex = 6;
@@ -107,7 +107,7 @@ namespace proyectoGestor
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(406, 29);
+            this.label1.Location = new System.Drawing.Point(24, 66);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(232, 17);
             this.label1.TabIndex = 7;
@@ -116,7 +116,7 @@ namespace proyectoGestor
             // btnSalir
             // 
             this.btnSalir.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.btnSalir.Location = new System.Drawing.Point(27, 426);
+            this.btnSalir.Location = new System.Drawing.Point(481, 371);
             this.btnSalir.Name = "btnSalir";
             this.btnSalir.Size = new System.Drawing.Size(215, 55);
             this.btnSalir.TabIndex = 8;

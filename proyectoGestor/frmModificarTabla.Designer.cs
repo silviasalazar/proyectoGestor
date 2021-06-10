@@ -43,7 +43,7 @@ namespace proyectoGestor
             // btnRenombrar
             // 
             this.btnRenombrar.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.btnRenombrar.Location = new System.Drawing.Point(37, 35);
+            this.btnRenombrar.Location = new System.Drawing.Point(484, 53);
             this.btnRenombrar.Name = "btnRenombrar";
             this.btnRenombrar.Size = new System.Drawing.Size(188, 38);
             this.btnRenombrar.TabIndex = 0;
@@ -54,7 +54,7 @@ namespace proyectoGestor
             // btnEliminarColumna
             // 
             this.btnEliminarColumna.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.btnEliminarColumna.Location = new System.Drawing.Point(37, 79);
+            this.btnEliminarColumna.Location = new System.Drawing.Point(484, 97);
             this.btnEliminarColumna.Name = "btnEliminarColumna";
             this.btnEliminarColumna.Size = new System.Drawing.Size(188, 40);
             this.btnEliminarColumna.TabIndex = 1;
@@ -65,7 +65,7 @@ namespace proyectoGestor
             // btnInsertarColumna
             // 
             this.btnInsertarColumna.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.btnInsertarColumna.Location = new System.Drawing.Point(37, 125);
+            this.btnInsertarColumna.Location = new System.Drawing.Point(484, 143);
             this.btnInsertarColumna.Name = "btnInsertarColumna";
             this.btnInsertarColumna.Size = new System.Drawing.Size(188, 40);
             this.btnInsertarColumna.TabIndex = 2;
@@ -77,7 +77,7 @@ namespace proyectoGestor
             // 
             this.comboBox1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(375, 55);
+            this.comboBox1.Location = new System.Drawing.Point(37, 53);
             this.comboBox1.Name = "comboBox1";
             this.comboBox1.Size = new System.Drawing.Size(277, 24);
             this.comboBox1.TabIndex = 3;
@@ -86,7 +86,7 @@ namespace proyectoGestor
             // btnInsertarRegistro
             // 
             this.btnInsertarRegistro.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.btnInsertarRegistro.Location = new System.Drawing.Point(37, 171);
+            this.btnInsertarRegistro.Location = new System.Drawing.Point(484, 189);
             this.btnInsertarRegistro.Name = "btnInsertarRegistro";
             this.btnInsertarRegistro.Size = new System.Drawing.Size(188, 40);
             this.btnInsertarRegistro.TabIndex = 4;
@@ -97,7 +97,7 @@ namespace proyectoGestor
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(371, 35);
+            this.label1.Location = new System.Drawing.Point(34, 33);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(165, 17);
             this.label1.TabIndex = 5;
@@ -106,7 +106,7 @@ namespace proyectoGestor
             // btnEliminarRegistro
             // 
             this.btnEliminarRegistro.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.btnEliminarRegistro.Location = new System.Drawing.Point(37, 217);
+            this.btnEliminarRegistro.Location = new System.Drawing.Point(484, 235);
             this.btnEliminarRegistro.Name = "btnEliminarRegistro";
             this.btnEliminarRegistro.Size = new System.Drawing.Size(188, 40);
             this.btnEliminarRegistro.TabIndex = 6;
@@ -117,7 +117,7 @@ namespace proyectoGestor
             // btnActulizarRegistro
             // 
             this.btnActulizarRegistro.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.btnActulizarRegistro.Location = new System.Drawing.Point(37, 263);
+            this.btnActulizarRegistro.Location = new System.Drawing.Point(484, 281);
             this.btnActulizarRegistro.Name = "btnActulizarRegistro";
             this.btnActulizarRegistro.Size = new System.Drawing.Size(188, 40);
             this.btnActulizarRegistro.TabIndex = 7;
@@ -128,7 +128,7 @@ namespace proyectoGestor
             // btnMostrarPor
             // 
             this.btnMostrarPor.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.btnMostrarPor.Location = new System.Drawing.Point(37, 309);
+            this.btnMostrarPor.Location = new System.Drawing.Point(484, 327);
             this.btnMostrarPor.Name = "btnMostrarPor";
             this.btnMostrarPor.Size = new System.Drawing.Size(188, 40);
             this.btnMostrarPor.TabIndex = 8;
